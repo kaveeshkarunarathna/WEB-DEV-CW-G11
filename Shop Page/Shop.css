@@ -33,3 +33,6 @@ body, header, nav, ul, li, h2, p {
 
   /* End of the Navigation bar styles */
   
+  body{
+    background-color: #240f84;
+  }
