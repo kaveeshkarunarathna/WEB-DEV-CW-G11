@@ -7,18 +7,73 @@
     <link rel="stylesheet" type="text/css" href="Quiz.css">
 </head>
 <body>
+  <main class="main">
     <header>
         <nav>
           <ul>
             <li><a href="/Main Page/mainPage.html">Home</a></li>
             <li><a href="/Comment Page/Comment.html">Comments</a></li>
             <li><a href="/Shop Page/Shop.html">Shop</a></li>
-            <li><a href="/Quiz/Quiz.html">Quiz</a></li>
+            <li><a href="/Quiz/Quiz.html" class="active">Quiz</a></li>
             <li><a href="/Site Map/SiteMap.html">Site Map</a></li>
             <li><a href="/About Us Page/AboutUs.html">About Us</a></li>
           </ul>
         </nav>
     </header>
-    <div class="container"></div>
+
+    <div class="container">
+      <section class="quiz-section">
+        <div class="quiz-box">
+          <h1>Cricket Quiz</h1>
+          <div class="quiz-header">
+            <span>Quiz Website</span>
+            <span class="header-score">Score: 0/5</span>
+          </div>
+
+          <h2 class="question-text">How many balls are included in a Over?</h2>
+          <div class="option-list">
+            <!--<div class="option">
+              <span>A.4</span>
+            </div>
+            <div class="option">
+              <span>B.10</span>
+            </div>
+            <div class="option">
+              <span>C.12</span>
+            </div>
+            <div class="option">
+              <span>D.6</span>
+            </div>-->
+          </div>
+          <div class="quiz-footer">
+            <span class="question-total">1 of 5 Questions</span>
+            <button class="next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+      <section class="quiz">
+        <div class="quiz-content">
+          <h1>Cricket Quiz</h1>
+          <p>Test your knowledge of cricket with this quiz!</p>
+          <button class="start-btn">Start Quiz</button>
+        </div>
+      </section>
+    </div>
+  </main>
+    <div class="popup-info">
+      <h2>Quiz Guide</h2>
+      <span class="info">1. Lorem ipsum dolor sit, amet consectetur adipisicing hjgvcuwy ygf </span>
+      <span class="info">2. Lorem ipsum dolor sit, amet consectetur adipisicing gveyhu</span>
+      <span class="info">3. Lorem ipsum dolor sit, amet consectetur adipisicing gfuykhg</span>
+      <span class="info">4. Lorem ipsum dolor sit, amet consectetur adipisiciing hyuguy2e iuhd</span>
+      <span class="info">5. Lorem ipsum dolor sit, amet consectetur adipisicing el</span>
+
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+      </div>
+    </div>
+    <script src="Quiz.js"></script>
+    <script src="Script.js"></script>
 </body>
 </html>
