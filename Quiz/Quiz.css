@@ -380,7 +380,7 @@ nav ul li a.active {
   position: relative;
   width: 250px;
   height: 250px;
-  background: conic-gradient(#ff0077 3.6deg, rgba(255, 255, 255, .1) 0deg);
+  /*background: conic-gradient(#ff0077 3.6deg, rgba(255, 255, 255, .1) 0deg);*/
   border-radius: 50%;
   display: flex;
   justify-content: center;
