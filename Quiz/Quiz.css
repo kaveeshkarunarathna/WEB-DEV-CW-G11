@@ -251,11 +251,10 @@ nav ul li a.active {
   margin-bottom: 20px;
 }
 
-.quiz-header span {
+.quiz-header .countdown {
   font-size: 18px;
   font-weight: 500;
 }
-
 .quiz-header .header-score {
   background: #ff0077;
   border-radius: 6px;
