@@ -38,13 +38,14 @@ tryAgainBtn.onclick =() => {
     quizBox.classList.add('active');
     nextBtn.classList.remove('active');
     resultBox.classList.remove('active');
+    remainingTime.classList.add('active');
 
+    startCountdown();
     questionCount = 0;
     questionNumb = 1;
     userScore = 0;
     showQuestions(questionCount);
     questionCounter(questionNumb);
-
     headerScore();
 }
 
@@ -63,15 +64,17 @@ goHomeBtn.onclick =() => {
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
+let timer;
 
 nextBtn.onclick =() => {
+    clearInterval(timer);
     if (questionCount < questions.length -1) {
         questionCount++;
         showQuestions(questionCount);
 
         questionNumb++;
         questionCounter(questionNumb);
-
+        startCountdown();
         nextBtn.classList.remove('active')
     }
     else {
@@ -99,10 +102,13 @@ function showQuestions(index) {
     }
 }
 
+
+
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer
-    let allOptions = optionList.children.length;
+    let allOptions = optionList.children.length; 
+    clearInterval(timer);
 
     if (userAnswer == correctAnswer) {
         answer.classList.add('correct');
