@@ -1,13 +1,15 @@
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
 const exitBtn = document.querySelector('.exit-btn');
+const nextBtn = document.querySelector('.next-btn');
 const main = document.querySelector('.main');
 const continueBtn = document.querySelector('.continue-btn');
 const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
-const tryAgainBtn = document.querySelector('.tryAgain-btn')
-const goHomeBtn = document.querySelector('.goHome-btn')
+const tryAgainBtn = document.querySelector('.tryAgain-btn');
+const goHomeBtn = document.querySelector('.goHome-btn');
+const remainingTime = document.querySelector('.countdown');
 
 startBtn.onclick =() => {
     popupInfo.classList.add('active');
@@ -24,7 +26,9 @@ continueBtn.onclick =() => {
     quizBox.classList.add('active');
     popupInfo.classList.remove('active');
     main.classList.remove('active');
+    remainingTime.classList.add('active');
 
+    startCountdown();
     showQuestions(0);
     questionCounter(1);
     headerScore();
@@ -59,8 +63,6 @@ goHomeBtn.onclick =() => {
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
-
-const nextBtn = document.querySelector('.next-btn');
 
 nextBtn.onclick =() => {
     if (questionCount < questions.length -1) {
@@ -160,3 +162,17 @@ function showResultBox() {
     }, speed);
 
 }
+
+function startCountdown() {
+  var countdown = 60;
+  var timer = setInterval(function() {
+    countdown--;  
+    remainingTime.textContent = countdown;
+    if (countdown <= 0) {
+      clearInterval(timer);
+    }
+  }, 1000);
+}
+
+
+
