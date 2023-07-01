@@ -170,11 +170,13 @@ function showResultBox() {
 }
 
 function startCountdown() {
-  var countdown = 60;
+  var countdown = 10;
   var timer = setInterval(function() {
     countdown--;  
     remainingTime.textContent = countdown;
     if (countdown <= 0) {
+    // Auto click the next button
+      nextBtn.click();
       clearInterval(timer);
     }
   }, 1000);
