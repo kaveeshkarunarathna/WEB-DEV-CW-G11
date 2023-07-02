@@ -170,16 +170,16 @@ function showResultBox() {
 }
 
 function startCountdown() {
-  var countdown = 10;
-  var timer = setInterval(function() {
-    countdown--;  
+    countdown = 5;
     remainingTime.textContent = countdown;
-    if (countdown <= 0) {
-    // Auto click the next button
-      nextBtn.click();
-      clearInterval(timer);
-    }
-  }, 1000);
+    timer = setInterval(function() {
+      countdown--;
+      remainingTime.textContent = countdown;
+      if (countdown <= 0) {
+        clearInterval(timer);
+        nextBtn.click();
+      }
+    }, 1000);
 }
 
 
