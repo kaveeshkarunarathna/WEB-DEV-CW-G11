@@ -1,112 +1,122 @@
 let questions = [
-    {
+    
+        {
         numb: 1,
-        question: "Which player holds the record for the highest individual score in Test cricket?",
-        answer: "B. Brian Lara",
+        question: "Which player has taken the most catches in international cricket?",
+        answer: "C. Ricky Ponting",
         Options: [
-            "A. Sachin Tendulkar",
-            "B. Brian Lara",
-            "C. Ricky Ponting",
-            "D. Don Bradman"
+        "A. Mahela Jayawardene",
+        "B. Rahul Dravid",
+        "C. Ricky Ponting",
+        "D. Jacques Kallis"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 2,
-        question: "Who is the leading run-scorer in One Day International (ODI) cricket?",
-        answer: "A. Sachin Tendulkar",
+        question: "Who has the highest individual score in Test cricket?",
+        answer: "C. Brian Lara",
         Options: [
-            "A. Sachin Tendulkar",
-            "B. Virat Kohli",
-            "C. Ricky Ponting",
-            "D. Kumar Sangakkara"
+        "A. Don Bradman",
+        "B. Sachin Tendulkar",
+        "C. Brian Lara",
+        "D. Steve Smith"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 3,
-        question: "Which country has won the most Cricket World Cup titles?",
-        answer: "A. Australia",
+        question: "Who has the most sixes in One Day Internationals (ODIs)?",
+        answer: "A. Rohit Sharma",
         Options: [
-            "A. Australia",
-            "B. India",
-            "C. West Indies",
-            "D. England"
+        "A. Rohit Sharma",
+        "B. Chris Gayle",
+        "C. AB de Villiers",
+        "D. MS Dhoni"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 4,
-        question: "Who is the fastest bowler to reach 100 wickets in Test cricket?",
-        answer: "A. Dale Steyn",
+        question: "Who has the best bowling figures in a single One Day International (ODI) match?",
+        answer: "D. Chaminda Vaas",
         Options: [
-            "A. Dale Steyn",
-            "B. Shane Warne",
-            "C. Ravichandran Ashwin",
-            "D. Malcolm Marshall"
+        "A. Muttiah Muralitharan",
+        "B. Glenn McGrath",
+        "C. Anil Kumble",
+        "D. Chaminda Vaas"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 5,
-        question: "Which player has taken the most catches in international cricket?",
-        answer: "C. Ricky Ponting",
+        question: "Who has the highest batting average in One Day Internationals (ODIs)?",
+        answer: "A. Virat Kohli",
         Options: [
-            "A. Mahela Jayawardene",
-            "B. Rahul Dravid",
-            "C. Ricky Ponting",
-            "D. Jacques Kallis"
+        "A. Virat Kohli",
+        "B. AB de Villiers",
+        "C. Kane Williamson",
+        "D. Hashim Amla"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 6,
-        question: "Which player holds the record for the highest individual score in Test cricket?",
-        answer: "B. Brian Lara",
+        question: "Who has the most wickets in Test cricket?",
+        answer: "C. Muttiah Muralitharan",
         Options: [
-            "A. Sachin Tendulkar",
-            "B. Brian Lara",
-            "C. Ricky Ponting",
-            "D. Don Bradman"
+        "A. Shane Warne",
+        "B. Anil Kumble",
+        "C. Muttiah Muralitharan",
+        "D. James Anderson"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 7,
-        question: "Who is the leading run-scorer in One Day International (ODI) cricket?",
-        answer: "A. Sachin Tendulkar",
+        question: "Which team has won the most ICC World Twenty20 (T20 World Cup) titles?",
+        answer: "B. West Indies",
         Options: [
-            "A. Sachin Tendulkar",
-            "B. Virat Kohli",
-            "C. Ricky Ponting",
-            "D. Kumar Sangakkara"
+        "A. India",
+        "B. West Indies",
+        "C. Australia",
+        "D. England"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 8,
-        question: "Which country has won the most Cricket World Cup titles?",
-        answer: "A. Australia",
+        question: "Who has scored the fastest century in Twenty20 International (T20I) cricket?",
+        answer: "A. David Miller",
         Options: [
-            "A. Australia",
-            "B. India",
-            "C. West Indies",
-            "D. England"
+        "A. David Miller",
+        "B. Rohit Sharma",
+        "C. Chris Gayle",
+        "D. Aaron Finch"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 9,
-        question: "Who is the fastest bowler to reach 100 wickets in Test cricket?",
-        answer: "A. Dale Steyn",
+        question: "Who has the most dismissals as a wicketkeeper in international cricket?",
+        answer: "B. Kumar Sangakkara",
         Options: [
-            "A. Dale Steyn",
-            "B. Shane Warne",
-            "C. Ravichandran Ashwin",
-            "D. Malcolm Marshall"
+        "A. MS Dhoni",
+        "B. Kumar Sangakkara",
+        "C. Adam Gilchrist",
+        "D. Mark Boucher"
         ]
-    },
-    {
+        },
+        
+        {
         numb: 10,
-        question: "Which player has taken the most catches in international cricket?",
-        answer: "C. Ricky Ponting",
+        question: "Who has the highest strike rate in Twenty20 International (T20I) cricket?",
+        answer: "C. Andre Russell",
         Options: [
-            "A. Mahela Jayawardene",
-            "B. Rahul Dravid",
-            "C. Ricky Ponting",
-            "D. Jacques Kallis"
+        "A. Glenn Maxwell",
+        "B. AB de Villiers",
+        "C. Andre Russell",
+        "D. Chris Lynn"
         ]
-    },
+        }
 ];
