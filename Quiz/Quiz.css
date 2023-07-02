@@ -408,6 +408,12 @@ nav ul li a.active {
   margin-top: 20px;
 }
 
+.percentage-container .spent-time {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .result-box .buttons {
   display: flex;
 }
