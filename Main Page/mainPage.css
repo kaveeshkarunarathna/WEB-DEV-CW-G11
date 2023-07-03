@@ -52,20 +52,34 @@ nav ul li a.active {
   
   /* Title card styles */
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: space-evenly;
+    justify-content: center;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 20vh;
   }
   
   .title-card {
-    background: #f1f1f1;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 200px;
     padding: 20px;
+    position: relative;
+    max-width: calc(50% - 20px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .title-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e64fb4;
   }
   
   .title-card a {
     text-decoration: none;
-    color: #333;
+    color: #080018;
   }
   
   .title-card h2 {
@@ -73,6 +87,71 @@ nav ul li a.active {
   }
   
   .title-card p {
-    color: #777;
+    display: none;
+    /* color: #0e0736; */
+    transition: opacity 0.3s ease-in-out;
   }
   
+  .title-card:hover p {
+    display: block;
+    opacity: 1;
+  }
+  
+  .title-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: radial-gradient(#fff, #f2f2f2); */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .title-card:hover::before {
+    opacity: 1;
+  }
+  
+  .title-card h2,
+  .title-card p {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .title-card h2::after,
+  .title-card p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0.2); */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .title-card:hover h2::after,
+  .title-card:hover p::after {
+    opacity: 1;
+  }
+  
+
+/* Background images for title cards */
+.title-card:nth-child(1) {
+  background-image: url('mainPageImages/cricket-history.jpg');
+}
+
+.title-card:nth-child(2) {
+  background-image: url('mainPageImages/famous-cricketers.jpg');
+}
+
+.title-card:nth-child(3) {
+  background-image: url('mainPageImages/cricket-world-cups.jpg');
+}
+
+.title-card:nth-child(4) {
+  background-image: url('mainPageImages/cricket-rules.jpg');
+}
