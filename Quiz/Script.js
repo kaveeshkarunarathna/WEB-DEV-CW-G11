@@ -170,7 +170,7 @@ function showResultBox() {
 }
 
 function startCountdown() {
-    countdown = 5;
+    countdown = 60;
     remainingTime.textContent = countdown;
     timer = setInterval(function() {
       countdown--;
