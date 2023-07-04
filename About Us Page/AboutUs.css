@@ -115,11 +115,11 @@ nav ul li a.active {
 
 /* Background images for title cards */
 .title-card:nth-child(1) {
-  background-image: url('AboutUs Images/Kaveesha.jpg');
+  background-image: url('AboutUs Images/Sabith.jpg');
 }
 
 .title-card:nth-child(2) {
-  background-image: url('AboutUs Images/Sabith.jpg');
+  background-image: url('AboutUs Images/Kaveesha.jpg');
 }
 
 .title-card:nth-child(3) {
