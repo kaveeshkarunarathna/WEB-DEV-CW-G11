@@ -1,11 +1,9 @@
- // Function to transition to the main web page after 4 seconds
- function transitionToMainPage() {
+function transitionToMainPage() {
     setTimeout(function() {
       window.location.href = "/Main Page/mainPage.html";
-    }, 4000); // 4 seconds delay
+    }, 4000);
   }
   
-  // Call the transition function when the page loads
-  window.onload = function() {
+ window.onload = function() {
     transitionToMainPage();
   };
