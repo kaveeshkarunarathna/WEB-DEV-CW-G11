@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+    background: url('presentationPagePic.jpg') no-repeat;
+    background-size: cover;
+}
+.title{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    
+}
+.title h1{
+    font-size: 4rem;
+    /* line-height: 0; */
+    margin: 0;
+    
+}
+.title h3{
+    font-size: 3rem;
+    /* margin-bottom: 2rem; */
+    margin: 0;
+
+}
+.name{
+    font-family: 'Poppins',sans-serif;
+    position: fixed;
+    bottom:0px ;
+    width: 90%;
+    text-align: center;
+}
+.name li{
+    display: inline;
+    padding: 10px;
+}
+.name ul{
+    padding-left: 0;
+    margin-left: 12rem;
+    margin-bottom: 3rem;
+}

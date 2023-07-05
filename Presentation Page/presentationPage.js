@@ -6,6 +6,6 @@
   }
   
   
-  window.onload = function() {
-    transitionToMainPage();
-  };
+  //window.onload = function() {
+    //transitionToMainPage();
+ // };
