@@ -1,7 +1,8 @@
 body{
     min-height: 100vh;
     background: url('presentationPagePic.jpg') no-repeat;
-    background-size: cover;
+    
+    
 }
 .title{
     font-family: 'Poppins',sans-serif;
@@ -39,7 +40,8 @@ body{
 .loader {
     display: flex;
     transition: all 0.4s;
-  
+    margin-top: 30rem;
+    margin-left: 50rem;
     bottom: 0px;
     width: 90%;
   }
