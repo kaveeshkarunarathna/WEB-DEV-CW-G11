@@ -16,9 +16,9 @@ function startCountdown() {
   }, 1000);
 }
 
-// function navigateToMainPage() {
-//   window.location.href = "/main Page/mainPage.html";
-// }
+function navigateToMainPage() {
+  window.location.href = "/main Page/mainPage.html";
+}
 
 
 //function transitionToMainPage() {
