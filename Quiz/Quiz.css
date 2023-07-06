@@ -13,9 +13,26 @@ body {
 }
   
 /* Navigation bar styles */
-nav ul {
+
+nav {
+  display: flex;
   background: #0d1635;
   text-align: center;
+}
+
+nav .logo {
+  float: left;
+  padding: 10px;
+}
+
+nav .logo img {
+  height: 30px; 
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
   
 nav ul li {
