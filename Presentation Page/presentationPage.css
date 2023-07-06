@@ -2,8 +2,10 @@ body{
     /* min-height: 100vh; */
     background-color: rgb(11, 1, 61);
     color: rgb(255, 255, 255);
+    /* background-image: url('presentationpage.jpg'); */
+    
 }
-.title{
+.title h1,h3{
     font-family: 'Poppins',sans-serif;
     text-align: center;
     
@@ -17,8 +19,8 @@ span{
 
 }
 .title h1{
-    font-size: 78px;
-    font-weight: 700;
+    font-size: 90px;
+    font-weight: 600;
     text-shadow: 0 0 10px rgba(0,0,0, .3);
     margin-bottom: 10px
     
@@ -41,7 +43,7 @@ span{
 }
 .name li{
     display: inline;
-    padding: 10px;
+    padding-right: 10px;
     font-weight: 500;
     text-shadow: 0 0 10px rgba(0,0,0, .3);
     font-size: 20px;
@@ -49,9 +51,18 @@ span{
 }
 .name ul{
     padding-left: 0;
-    margin-left: 12rem;
+    /* margin-left: 12rem; */
     margin-bottom: 3rem;
+    text-align: center;
 
 }
-
+img{
+    height: 200px;
+    /* width: 600px; */
+    /* margin-left: 560px;
+    align-items: center;
+    margin-top: 30px; */
+    
+    
+}
   
