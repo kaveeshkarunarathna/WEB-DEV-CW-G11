@@ -10,6 +10,9 @@ body{
     text-align: center;
     
 }
+.title{
+    padding-top: 70px;
+}
 
 span{
     font-weight: 600;
@@ -27,7 +30,7 @@ span{
         
 }
 .title h3{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     text-shadow: 0 0 10px rgba(0,0,0, .3);
     margin-top: 10px;
@@ -35,10 +38,13 @@ span{
 }
 .name{
     font-family: 'Poppins',sans-serif;
-    position: fixed;
-    bottom:0px ;
-    width: 90%;
+   
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 40px;
 
 }
 .name li{
@@ -47,13 +53,6 @@ span{
     font-weight: 500;
     text-shadow: 0 0 10px rgba(0,0,0, .3);
     font-size: 20px;
-
-}
-.name ul{
-    padding-left: 0;
-    /* margin-left: 12rem; */
-    margin-bottom: 3rem;
-    text-align: center;
 
 }
 img{
