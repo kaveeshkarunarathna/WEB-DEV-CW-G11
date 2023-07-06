@@ -1,8 +1,8 @@
 body{
-    /* min-height: 100vh; */
+   
     background-color: rgb(11, 1, 61);
     color: rgb(255, 255, 255);
-    /* background-image: url('presentationpage.jpg'); */
+   
     
 }
 .title h1,h3{
@@ -57,11 +57,6 @@ span{
 }
 img{
     height: 200px;
-    /* width: 600px; */
-    /* margin-left: 560px;
-    align-items: center;
-    margin-top: 30px; */
-    
-    
+   
 }
   
