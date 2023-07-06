@@ -1,7 +1,9 @@
 body{
     /* min-height: 100vh; */
-    background-color: rgb(11, 1, 61);
+    /* background-color: rgb(11, 1, 61); */
     color: rgb(255, 255, 255);
+    background-image: url('presentationpage.jpg');
+    
 }
 .title{
     font-family: 'Poppins',sans-serif;
