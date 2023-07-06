@@ -4,7 +4,7 @@ remainingTime.classList.add('active');
 startCountdown();
 
 function startCountdown() {
-  let countdown = 8;
+  let countdown = 4;
   remainingTime.textContent = countdown;
   let timer = setInterval(function() {
     countdown--;
