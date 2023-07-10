@@ -72,6 +72,7 @@ nav ul li a.active {
   pointer-events: auto;
   transition: .3s ease;
 }
+
 .product {
   display: inline-block;
   margin: 20px;
