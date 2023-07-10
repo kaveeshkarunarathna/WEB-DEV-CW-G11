@@ -83,14 +83,11 @@ nav ul li a.active {
   height: 300px;
   margin-left: 80px;
   margin-right: 80px;
-  padding: 20px;
-  
+  padding: 20px;  
   display: block;
   object-fit: cover;
   background-color: #ffa2cd;
   border-radius: 5px;
-  
-  
 }
 
 .product h2 {
