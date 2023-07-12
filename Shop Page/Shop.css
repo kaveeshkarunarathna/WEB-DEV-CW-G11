@@ -72,11 +72,16 @@ nav ul li a.active {
   pointer-events: auto;
   transition: .3s ease;
 }
+/* .shop{
+  margin: top 50px;;
+} */
 
 .product {
   display: inline-block;
+  padding-top: 50px;
   margin: 20px;
   text-align: center;
+  padding-left: 20px;
 }
 
 .product img {
