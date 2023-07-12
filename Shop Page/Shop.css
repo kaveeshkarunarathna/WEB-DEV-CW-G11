@@ -72,13 +72,14 @@ nav ul li a.active {
   pointer-events: auto;
   transition: .3s ease;
 }
-/* .shop{
-  margin: top 50px;;
-} */
+.cart img {
+ padding-left: 1640px;
+ padding-top: 35px;
+}
 
 .product {
   display: inline-block;
-  padding-top: 50px;
+  padding-top: 20px;
   margin: 20px;
   text-align: center;
   padding-left: 20px;
