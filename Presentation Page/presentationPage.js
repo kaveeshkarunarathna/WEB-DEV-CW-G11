@@ -19,15 +19,3 @@ function startCountdown() {
 function navigateToMainPage() {
   window.location.href = "/main Page/mainPage.html";
 }
-
-
-//function transitionToMainPage() {
-//  setTimeout(function() {
-//    window.location.href = "/Main Page/mainPage.html";
-//  }, 4000); 
-//}
-  
-  
-  // window.onload = function() {
-  //   transitionToMainPage();
-  // };
