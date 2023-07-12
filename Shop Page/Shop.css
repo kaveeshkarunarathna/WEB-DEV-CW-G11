@@ -72,11 +72,6 @@ nav ul li a.active {
   pointer-events: auto;
   transition: .3s ease;
 }
-.cart img {
- padding-left: 1640px;
- padding-top: 35px;
-}
-
 .product {
   display: inline-block;
   padding-top: 20px;
