@@ -10,9 +10,6 @@
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="/Images/CrickZoneWhite.png" alt="CrickZoneLogo">
-          </div>
           <ul>
             <li><a href="/Main Page/mainPage.html">Home</a></li>
             <li><a href="/Comment Page/Comment.html">Comments</a></li>
@@ -21,52 +18,84 @@
             <li><a href="/Site Map/SiteMap.html">Site Map</a></li>
             <li><a href="/About Us Page/AboutUs.html">About Us</a></li>
           </ul>
+          <div class="cart-icon">
+
+<!-- Reference - https://www.youtube.com/watch?v=Gnh-9IH6BEc -->
+            <!-- Cart Icon -->
+        <i class='bx bx-shopping-bag' style=' font-size: 30px; color:#fffcfc' id="cart-icon" data-quantity="0"   ></i>
+          </div>
+          <!-- Cart -->
+          <div class="cart">
+            <h2 class="cart-title"> Your Cart</h2>
+            <!-- Content -->
+            <div class="cart-content">
+              
+            </div>
+      
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">LKR 0</div>
+            </div>
+            <!-- buy button -->
+            <button type="button" class="btn-buy">Pay Now</button>
+            <!-- close cart -->
+            <i class='bx bx-x' style='color:#ffffff' id="close-cart"  ></i>
+          </div>
         </nav>
       </header>
-  <main class="main">
-  <div class="checkoutBtn" onclick="openCheckout('#order')">
-    <a href="#"> <i class=" bx bx-cart"></i></a>
-    <span id="itemsInCart"></span>
-  </div>
+      <main class="main">
+      <!-- products -->
+      <section class="shop-container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- content -->
+        <div class="shop-content">
+          <!-- box 1 -->
+        <div class="product-box">
+          <img src="Store images/Cricket-helmet.jpg" alt="" class="product-img">
+          <h2 class="product-title">Cricket Helmet</h2>
+          <span class="price">LKR4500</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 2 -->
+        <div class="product-box">
+          <img src="Store images/SG Sunny Legend Cricket Bat 2023.jpg" alt="" class="product-img">
+          <h2 class="product-title">Cricket Bat</h2>
+          <span class="price">LKR 5000</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div><!-- box 3 -->
+        <div class="product-box">
+          <img src="Store images/SS Aero Lite Batting Gloves.jpg" alt="" class="product-img">
+          <h2 class="product-title"> Batting Gloves</h2>
+          <span class="price">LKR 2750</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div><!-- box 4 -->
+        <div class="product-box">
+          <img src="Store images/SS Match Batting Pad.jpg" alt="" class="product-img">
+          <h2 class="product-title"> Batting Pad</h2>
+          <span class="price">LKR 3500</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div><!-- box 5 -->
+        <div class="product-box">
+          <img src="Store images/SS SKY Smasher Cricket Bat 2023.jpg" alt="" class="product-img">
+          <h2 class="product-title">Cricket Bat</h2>
+          <span class="price">LKR 6000</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div><!-- box 6 -->
+        <div class="product-box">
+          <img src="Store images/TYKA PITCH (White & Neon Green) Cricket Shoes - 2022.jpg" alt="" class="product-img">
+          <h2 class="product-title">Cricket Shoes</h2>
+          <span class="price">LKR 8000</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        </div>
+      </section>
 
- <div class="shop">
-  <div class="product">
-    <img  src="Store images/Cricket-helmet.jpg">
-    <h2>Cricket Helmet</h2>
-    <p>Price: $19.99</p>
-    <button >Add</button>
-  </div>
-  <div class="product">
-    <img src="Store images/SG Sunny Legend Cricket Bat 2023.jpg" >
-    <h2>SG Cricket Bat</h2>
-    <p>Price: $19.99</p>
-    <button>Add</button>
-  </div>
-  <div class="product">
-    <img src="Store images/SS Aero Lite Batting Gloves.jpg" alt="Product 1">
-    <h2>SS Batting Gloves</h2>
-    <p>Price: $19.99</p>
-    <button>Add</button>
-  </div>
-  <div class="product">
-    <img src="Store images/SS Match Batting Pad.jpg" alt="Product 1">
-    <h2>SS Batting Pad</h2>
-    <p>Price: $19.99</p>
-    <button>Add</button>
-  </div>
-  <div class="product">
-    <img src="Store images/SS SKY Smasher Cricket Bat 2023.jpg" alt="Product 1">
-    <h2>SS Cricket Bat</h2>
-    <p>Price: $19.99</p>
-    <button>Add</button>
-  </div>
-  <div class="product">
-    <img src="Store images/TYKA PITCH (White & Neon Green) Cricket Shoes - 2022.jpg" alt="Product 1">
-    <h2>Cricket Shoes</h2>
-    <p>Price: $19.99</p>
-    <button>Add</button>
-  </div>
- </div>
+
+
+      <!-- link to js -->
+      <script src="Shop.js"></script>
+ 
+
   </main>
 </body>
 
