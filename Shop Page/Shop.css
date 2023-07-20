@@ -212,10 +212,11 @@ padding: 4rem 0 3rem;
   margin-top: 1.5rem; */
 }
 .section-title{
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1.8rem;
+  margin-left: 200px;
 }
 .shop-content {
   display: grid;
