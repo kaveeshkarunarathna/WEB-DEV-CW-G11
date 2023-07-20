@@ -58,6 +58,7 @@ function quantityChanged(event){
         input.value = 1;
     }
     updateTotal();
+    updateCartIcon();
 } 
 
 // remove cart item
@@ -76,6 +77,7 @@ function addCartClicked(event){
     var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
     addProductToCart(title,price,productImg);
     updateTotal();
+    updateCartIcon();
 }
 function addProductToCart(title,price,productImg){
     var cartShopBox = document.createElement('div');
@@ -105,6 +107,7 @@ function addProductToCart(title,price,productImg){
     cartShopBox
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change",quantityChanged);
+    updateCartIcon();
 }
 
 
@@ -132,7 +135,17 @@ function updateTotal() {
       totalElement.innerText = 'LKR ' + total;
     }
   }
+  // quantity in cart icon
+  function updateCartIcon(){
+    var cartBoxes = document.getElementsByClassName('cart-box');
+    var quantity = 0;
 
-  
+    for (var i = 0; i < cartBoxes.length;i++){
+        var cartBox = cartBoxes[i];
+        var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
+        quantity += parseInt(quantityElement.value);
+    }
+    var cartIcon = document.querySelector("#cart-icon");
+    cartIcon.setAttribute("data-quantity", quantity); 
+}
 
-  //1:24:35 
