@@ -87,7 +87,7 @@ padding: 4rem 0 3rem;
   /* margin-top: 6px;
   margin-left: 250px; */
 }
-#cart-icon [data-quantity = "0"]::after{
+/* #cart-icon [data-quantity = "0"]::after{
   contain: '';
 }
 #cart-icon [data-quantity]::after{
@@ -106,7 +106,7 @@ padding: 4rem 0 3rem;
   justify-content: center;
   align-items: center;
 
-}
+} */
 .cart{
   position: fixed;
   /* float: right; */
