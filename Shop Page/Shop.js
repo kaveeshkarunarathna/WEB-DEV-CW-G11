@@ -42,15 +42,7 @@ function ready(){
         var button = addCart[i];
         button.addEventListener("click",addCartClicked);
         }
-
-
-
-
 }
-
-
-
-
 // quantity change - function (in cart increase quantity and reduce)
 function quantityChanged(event){
     var input =  event.target;
@@ -60,14 +52,12 @@ function quantityChanged(event){
     updateTotal();
     updateCartIcon();
 } 
-
 // remove cart item
 function removeCartItem (event){
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     updateTotal();    
 }
-
 // Add Cart Function
 function addCartClicked(event){
     var button = event.target;
@@ -109,11 +99,6 @@ function addProductToCart(title,price,productImg){
     .addEventListener("change",quantityChanged);
     updateCartIcon();
 }
-
-
-
-
-
 
 function updateTotal() {
     var cartContent = document.getElementsByClassName('cart-content')[0];
