@@ -10,6 +10,10 @@
   text-transform: capitalize;
   transition: all .2s linear;
 }
+
+body{
+    overflow: hidden;
+}
 fieldset{
     border: none;
 }
@@ -17,10 +21,10 @@ fieldset{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    /* padding: 25px; */
     min-height: 100vh;
     background-color: #0d1635;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
 }
 .container form{
     padding: 20px;
