@@ -40,3 +40,64 @@ legend{
     font-size: large;
     padding: 10px 0 10px 0 ;
 }
+
+.form-outer{
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 70px;
+}
+.form-outer form{
+    border-radius: 5px;
+    padding: 20px;
+    width: 700px;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    font-size: 12px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.col{
+    
+    flex:1 1 250px;
+}
+.title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+.input-box{
+    margin-bottom: 15px 0;
+    
+}
+.input-box span{
+    margin: 5px;
+    display: block;
+}
+.input-box input{
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+.input-box img{
+    height: 34px;
+    margin-top: 5px;
+    
+}
+.submit-btn{
+  width: 100%;
+}
+.

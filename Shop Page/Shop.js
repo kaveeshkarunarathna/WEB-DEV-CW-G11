@@ -134,3 +134,18 @@ function updateTotal() {
     cartIcon.setAttribute("data-quantity", quantity); 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

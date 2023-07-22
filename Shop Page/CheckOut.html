@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check</title>
+    <title>Payment Gateway</title>
     <link rel="stylesheet" href="CheckOut.css">
 </head>
 <body>
     <div class="container">
+   
         <form action="">
             <div class="row">
                 <div class="col">
@@ -16,77 +17,89 @@
                         <div class="total-title">Total</div>
                         <div class="total-amount">LKR 0</div>
                     </div>
-                    <fieldset>
-                        <legend>Payment Details</legend>
-                        <div class="input-box">
-                            <label for="cardNo">Card Number</label>
-                            <input type="text" name="cardNo" id="cardNo" required placeholder="1111 2222 3333 4444" size="16" maxlength="16">
-                        </div>
-                        <div class="input-box">
-                            <label for="cardName">Name</label>
-                            <input type="text" name="cardName" id="cardName" required placeholder="Card Holder Name">
-                        </div>
-                        <div class="input-box">
-                            <label for="date">Expiry Date</label>
-                            <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="MM"> / <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="YY"/> 
-                        </div>
-                        <div class="input-box">
-                            <label for="code">Security Code</label>
-                            <input type="text" name="code" id="code" size="3" maxlength="3" required placeholder="CVV"/> 
-                        </div>
-                    </fieldset>
-                    <fieldset> 
-                        <legend>Billing Address</legend>
-                            <div class="input-box">
-                                <label for="name">Full Name:</label>
-                                <input  type="text" name="name" id="name" required placeholder="Full Name">
-                            </div>
-                            <div class="input-box">
-                                <label for="phoneNo">Phone Number:</label>
-                                <input type="tel" name="phoneNo" id="phoneNo" required placeholder="Phone Number" maxlength="10">
-                            </div>
-                            <div class="input-box">
-                                <label for="address">Address:</label>
-                                <input required type="text" name="address" id="address" required placeholder="Address">
-                            </div>
-                            <div class="input-box">
-                                <label for="district">District:</label>
-                                <input required type="text" name="district" id="district" required placeholder="District">
-                            </div>
-                            <div class="input-box">
-                                <label for="province">Province:</label>
-                                <select name="province" id="province"   required>
-                                    <option value="central">Central</option>
-                                    <option value="eastern">Eastern</option>
-                                    <option value="northern">Northern</option>
-                                    <option value="north_central">North Central</option>
-                                    <option value="north_western">North Western</option>
-                                    <option value="sabaragamuwa">Sabaragamuwa</option>
-                                    <option value="southern">Southern</option>
-                                    <option value="uva">Uva</option>
-                                    <option value="western" selected>Western</option>
-                                </select>
-                            </div>
-                            <div class="input-box">
-                                <label for="zipCode">Zip code:</label>
-                                <input type="text" name="zipCode" id="zipCode" required placeholder="zip Code" maxlength="5">
-                            </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Contact Details</legend>
-                        <div class="input-box">
-                            <label for="phoneNo">Phone Number:</label>
-                            <input type="tel" name="phoneNo" id="phoneNo" required placeholder="Phone Number" maxlength="10">
-                        </div>
-                        <div class="input-box">
-                            <label for="mail">Email Id:</label>
-                            <input type="email" name="mail" id="mail" required placeholder="example@mail.com">
-                        </div>
-                    </fieldset>
-                
-                    
-                   
+                    <h3 class="title">Your Details</h3>
+                    <div class="input-box">
+                        <span>Full name :</span>
+                        <input type="text" placeholder="ex:John Smith" required id="name"  >
+                    </div>
+                    <div class="input-box">
+                        <span>Contact number :</span>
+                        <input type="tel"  placeholder="+9401 2345645" required maxlength="10" id="phoneNo">
+                    </div>
+                    <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email"  placeholder="ex: example@gmail.com" required  >
+                    </div>
+                    <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text"id="address" required placeholder="Address">
+                    </div>
+                    <div class="input-box">
+                        <span>District :</span>
+                        <input type="text" id="district" required placeholder="ex:Colombo">
+                    </div>
+                    <div class="input-box" >
+                        <span>Province :</span> 
+                        <select name="Country" required placeholder="Please Select" >
+                            <option value="central">Central</option>
+                            <option value="eastern">Eastern</option>
+                            <option value="northern">Northern</option>
+                            <option value="north_central">North Central</option>
+                            <option value="north_western">North Western</option>
+                            <option value="sabaragamuwa">Sabaragamuwa</option>
+                            <option value="southern">Southern</option>
+                            <option value="uva">Uva</option>
+                            <option value="western" selected>Western</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span>Zip Code :</span>
+                        <input type="text" id="zipCode" required placeholder="Ex:12345" maxlength="5">
+                    </div>
                 </div>
+                <!-- In the "Payments" section -->
+                <div class="col">
+                    <h3 class="title">Payments</h3>
+                    <div class="input-box">
+                        <span>Card accepted:</span>
+                        <img src="Store images/card.jpg" alt="cards">
+                    </div>
+                    <div class="input-box">
+                        <span>Name on card:</span>
+                        <input type="text" id="payment-name" placeholder="ex:John Smith" required >
+                    </div>
+                    <div class="input-box">
+                        <span>Credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="">
+                        <span>Exp year  month  :</span> <br>
+                        <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="MM"> / <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="YY"/> 
+                        
+                    </div>
+                  
+                    <div class="input-box">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123" size="3" maxlength="3">
+                    </div>
+
+                    <!-- Contact Details -->
+                    <h3 class="title">Contact Details</h3>
+                    <div class="input-box">
+                        <span>Mobile Number:</span>
+                        <input type="tel" id="contact-mobile" placeholder="+9401 2345645" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Email:</span>
+                        <input type="email" id="contact-email" placeholder="ex: example@gmail.com" required>
+                    </div>
+                    <button id="change-contact" onclick="editContactDetails()">Change</button>
+                    <button id="confirm-contact" onclick="confirmContactDetails()">Confirm</button>
+                </div>
+
+
+            </div>
+            <input type="submit" value="Confirm " class="submit-btn btn" >
             </div>
         </form>
     </div>
