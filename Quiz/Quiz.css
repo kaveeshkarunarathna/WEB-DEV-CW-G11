@@ -386,7 +386,7 @@ nav ul li a.active {
 }
 
 .result-box h2 {
-  font-size: 52px;
+  font-size: 18px;
 }
 
 .result-box .percentage-container {
@@ -397,41 +397,9 @@ nav ul li a.active {
   margin: 20px 0 40px;
 }
 
-.percentage-container .circular-progress {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  /*background: conic-gradient(#ff0077 3.6deg, rgba(255, 255, 255, .1) 0deg);*/
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.percentage-container .circular-progress::before{
-  content: '';
-  position: absolute;
-  width: 210px;
-  height: 210px;
-  background: rgb(14, 14, 91);
-  border-radius: 50%;
-}
-
-.circular-progress .progress-value {
-  position: relative;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.percentage-container .score-text {
-  font-size: 26px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.percentage-container .spent-time {
-  font-size: 26px;
-  font-weight: 600;
+.percentage-container {
+  font-size: 18px;
+  font-weight: 400;
   margin-top: 20px;
 }
 

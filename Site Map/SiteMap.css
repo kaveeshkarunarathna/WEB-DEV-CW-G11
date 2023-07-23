@@ -83,6 +83,7 @@ h1{
   position: absolute;
   top: 25%;
   left: 34%;
+  transform: translate( 0%, 0%);
 }
 
 .link_circle{
@@ -103,29 +104,28 @@ h1{
   transform: scale(1.2);
 }
 
-#circle_5{
-  left: 15px;
-  top: 170px;
+.link_circle a{
+  text-decoration: none !important;
+}
+
+#circle_1{
+  left: 223px;
+  top: 15px;
 }
 
 #circle_2{
   left: 436px;
-  top: 170px;
-}
-
-#circle_1{
-  left: 225px;
-  top: 15px;
+  top: 140px;
 }
 
 #circle_3{
-  left: 368px;
-  top: 450px;
+  left: 436px;
+  top: 315px;
 }
 
 #circle_4{
-  left: 90px;
-  top: 450px;
+  left: 223px;
+  top: 440px;
 }
 footer {
   background: #0d1635;
@@ -152,7 +152,20 @@ footer {
   text-decoration: underline;
 }
 
-/* #circle_6{
-  left: px;
-  top: px;
-} */
+#circle_5{
+  left: 10px;
+  top: 315px;
+}
+
+#circle_6{
+  left: 10px;
+  top: 140px;
+}
+
+#page_name{
+  font-size: clamp(20px, 2vw, 40px);
+  position: absolute;
+  top: 46%;
+  left: 36%;
+  transform: translate( 0%, 0%);
+}
