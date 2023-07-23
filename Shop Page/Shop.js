@@ -7,9 +7,17 @@ let exitNow = document.querySelector('.exit')
 // Open the checkout form
 payNow.onclick = () => {
     checkoutForm.classList.add('active');
+    const totalPrice = document.getElementById("cart-total-amountId").innerHTML;
+    document.getElementById("total-amountId").innerHTML = totalPrice;
+
+    const shopContainers = document.querySelectorAll(".main");
+    shopContainers.forEach(container =>{
+        container.style.display = "none";
+    });
 };
 exitNow.onclick = () => {
     checkoutForm.classList.remove('active') ;
+    window.location.reload ();
 };
 
 // cart open close
@@ -23,6 +31,7 @@ cartIcon.onclick = () => {
 // close cart
 closeCart.onclick = () => {
     cart.classList.remove('active');
+    window.location.reload ();
 };
 
 // making add to cart
