@@ -11,7 +11,7 @@ body {
   color: #fff;
   background: #000000;
   background: url('/Images/background.jpg') no-repeat;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .main{
