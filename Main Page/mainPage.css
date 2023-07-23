@@ -14,6 +14,26 @@ body {
   overflow-y: scroll;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9a4f1f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01629e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26b0ff;
+}
+
 .main{
   min-height: 100vh;
   background-size: cover;

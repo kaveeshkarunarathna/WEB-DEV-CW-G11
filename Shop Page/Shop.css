@@ -243,6 +243,25 @@ padding: 4rem 0 3rem;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9a4f1f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01629e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26b0ff;
+}
 
 
 @media (min-width: 768px) {
