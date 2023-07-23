@@ -11,7 +11,7 @@ body {
   color: #fff;
   background: #000000;
   background: url('/Images/background.jpg') no-repeat;
-  overflow: auto;
+  overflow-x: initial;
 }
 
 /* Navigation bar styles */
@@ -29,7 +29,7 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 30px;
+  height: 30px!important;
 }
 
 nav ul {
@@ -71,23 +71,67 @@ nav ul li a.active {
   transition: 0.3s ease;
 }
 
-.content {
-  padding: 20px;
+html {
+  scroll-behavior: smooth;
 }
 
-.content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.content h2 {
-  font-size: 28px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+.layout_padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
 }
 
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.section{
+  width: 100%;
+  float: left;
 }
+
+.disc_section{
+  width: 68%;
+  float: right;
+}
+
+.disc_section_2{
+  width: 68%;
+  float: left;
+}
+
+h2 {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 46px;
+  color: #ffffff;
+  margin: 50px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.image_2{
+  width: 30%;
+  float: right;
+}
+
+.image_1{
+  width: 30%;
+  float: left;
+}
+
