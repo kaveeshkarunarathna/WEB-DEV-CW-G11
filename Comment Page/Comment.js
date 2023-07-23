@@ -32,8 +32,9 @@ function validateForm() {
     document.getElementById("emailError").innerHTML = "Please provide a valid email address.";
     return false;
   }
-  submitForm();
+  
   showThankYouMessage();
+  submitForm();
   return false;
 }
 
