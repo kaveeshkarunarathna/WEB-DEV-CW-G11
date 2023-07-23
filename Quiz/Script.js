@@ -152,7 +152,7 @@ function showResultBox() {
 
     const wrongAnswers = document.querySelector('.wrong-answers')
     let incorrectAnswers = (questions.length-userScore);
-    wrongAnswers.textContent = `Wrong Answers :${incorrectAnswers}`;
+    wrongAnswers.textContent = `Wrong Answers : ${incorrectAnswers}`;
 
     const scoreText = document.querySelector('.score-text');
     scoreText.textContent = `Score : ${userScore}`;
@@ -165,7 +165,7 @@ function showResultBox() {
     let progress = setInterval(() => {
         progressStartValue++;
         //console.log(progressStartValue);
-        progressValue.textContent = `${progressStartValue}%`;
+        progressValue.textContent = `Grade : ${progressStartValue}%`;
 
         if (progressStartValue == progressEndValue){
             clearInterval(progress);
