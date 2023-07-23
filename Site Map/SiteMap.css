@@ -64,6 +64,26 @@ nav ul li a.active {
   background: #ff0077;
   border-radius: 5px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9a4f1f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01629e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26b0ff;
+}
   
 /* End of the Navigation bar styles */
 
