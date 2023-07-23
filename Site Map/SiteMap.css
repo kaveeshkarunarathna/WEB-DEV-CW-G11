@@ -73,4 +73,62 @@ nav ul li a.active {
   pointer-events: auto;
   transition: .3s ease;
 }
-  
+
+h1{
+  text-align: center;
+  padding: 20px;
+}
+
+.pentagon-box {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+}
+
+.link_circle{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.link_circle:hover{
+  transform: scale(1.2);
+}
+
+#circle_5{
+  left: 15px;
+  top: 170px;
+}
+
+#circle_2{
+  left: 436px;
+  top: 170px;
+}
+
+#circle_1{
+  left: 225px;
+  top: 15px;
+}
+
+#circle_3{
+  left: 368px;
+  top: 450px;
+}
+
+#circle_4{
+  left: 90px;
+  top: 450px;
+}
+
+/* #circle_6{
+  left: px;
+  top: px;
+} */

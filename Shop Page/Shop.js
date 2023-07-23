@@ -1,5 +1,21 @@
 //  Reference - https://www.youtube.com/watch?v=Gnh-9IH6BEc
 
+let payNow = document.querySelector('.btn-buy');
+let checkoutForm = document.querySelector('.container');
+let exitNow = document.querySelector('.exit')
+
+// Open the checkout form
+payNow.onclick = () => {
+    checkoutForm.classList.add('active');
+};
+exitNow.onclick = () => {
+    checkoutForm.classList.remove('active') ;
+};
+
+
+
+
+
 // cart open close
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');

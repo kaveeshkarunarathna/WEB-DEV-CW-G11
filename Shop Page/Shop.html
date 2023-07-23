@@ -7,6 +7,7 @@
     <link rel="website Icon" type="png" href="/Images/CrickZoneWhite.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="Shop.css">
+    <link rel="stylesheet" href="CheckOut.css">
 </head>
 <body>
     <header>
@@ -33,18 +34,108 @@
             <h2 class="cart-title"> Your Cart</h2>
             <!-- Content -->
             <div class="cart-content"></div>
-     
             <div class="total">
               <div class="total-title">Total</div>
               <div class="total-price">LKR 0</div>
             </div>
             <!-- buy button -->
-            <form action="CheckOut.html">
+            <!-- <form action="CheckOut.html"> -->
             <button type="submit" class="btn-buy"  >Pay Now</button>
-            </form>
+            <!-- </form> -->
             <!-- close cart -->
             <i class='bx bx-x' style='color:#ffffff' id="close-cart"  ></i>
           </div>
+
+          <div class="container"> 
+            <form action="" class="form">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="title-payment">Order Summery</h3>
+                        <div class="total-payment">    
+                            <div class="total-title">Total</div>
+                            <div class="total-amount">LKR 0</div>
+                        </div>
+                        <h3 class="title">Your Details</h3>
+                        <div class="input-box">
+                            <span>Full name :</span>
+                            <input type="text" placeholder="ex:John Smith" required id="name"  >
+                        </div>
+                        <div class="input-box">
+                            <span>Contact number :</span>
+                            <input type="tel"  placeholder="+9401 2345645" required maxlength="10" id="phoneNo">
+                        </div>
+                        <div class="input-box">
+                            <span>Email :</span>
+                            <input type="email"  placeholder="ex: example@gmail.com" required>
+                        </div>
+                        <div class="input-box">
+                            <span>Address :</span>
+                            <input type="text"id="address" required placeholder="Address">
+                        </div>
+                        <div class="input-box">
+                            <span>District :</span>
+                            <input type="text" id="district" required placeholder="ex:Colombo">
+                        </div>
+                        <div class="input-box" >
+                            <span>Province :</span> 
+                            <select name="Country" required placeholder="Please Select" >
+                                <option value="central">Central</option>
+                                <option value="eastern">Eastern</option>
+                                <option value="northern">Northern</option>
+                                <option value="north_central">North Central</option>
+                                <option value="north_western">North Western</option>
+                                <option value="sabaragamuwa">Sabaragamuwa</option>
+                                <option value="southern">Southern</option>
+                                <option value="uva">Uva</option>
+                                <option value="western" selected>Western</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code :</span>
+                            <input type="text" id="zipCode" required placeholder="Ex:12345" maxlength="5">
+                        </div>
+                    </div>
+                    <!-- In the "Payments" section -->
+                    <div class="col">
+                        <h3 class="title">Payments</h3>
+                        <div class="input-box">
+                            <span>Card accepted:</span>
+                            <img src="Store images/card.jpg" alt="cards">
+                        </div>
+                        <div class="input-box">
+                            <span>Name on card:</span>
+                            <input type="text" id="payment-name" placeholder="ex:John Smith" required >
+                        </div>
+                        <div class="input-box">
+                            <span>Credit card number :</span>
+                            <input type="number" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="">
+                            <span>Exp year  month  :</span> <br>
+                            <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="MM"> / <input type="text" name="date" id="date" size="2" maxlength="2" required placeholder="YY"/>                        
+                        </div>                 
+                        <div class="input-box">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="123" size="3" maxlength="3">
+                        </div>
+                        <!-- Contact Details -->
+                        <h3 class="title">Contact Details</h3>
+                        <div class="input-box">
+                            <span>Mobile Number:</span>
+                            <input type="tel" id="contact-mobile" placeholder="+9401 2345645" required>
+                        </div>
+                        <div class="input-box">
+                            <span>Email:</span>
+                            <input type="email" id="contact-email" placeholder="ex: example@gmail.com" required>
+                        </div>
+                        <button>Reset</button>
+                        <button class="exit">Exit</button>
+                    </div>
+                </div>
+                <input type="submit" value="Confirm " class="submit-btn btn" >
+                </div>
+            </form>
+        </div>
       </header>
       <main class="main">
       <!-- products -->
