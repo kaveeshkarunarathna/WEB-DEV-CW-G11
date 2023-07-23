@@ -33,9 +33,10 @@ function validateForm() {
     return false;
   }
   
-  showThankYouMessage();
+  else {showThankYouMessage();
   submitForm();
   return false;
+  }
 }
 
 function clearErrors() {

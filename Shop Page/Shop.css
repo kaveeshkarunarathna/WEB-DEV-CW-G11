@@ -243,7 +243,9 @@ padding: 4rem 0 3rem;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-/* width */
+.shop-content {
+  grid-template-columns: repeat(4, 1fr);
+/* width */}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -288,7 +290,6 @@ padding: 4rem 0 3rem;
 .add-cart:hover{
   background: hsl(249, 32%, 17%);
 }
-
 /* checkout */
 fieldset{
   border: none;
