@@ -36,11 +36,11 @@
               <div class="cart-content"></div>
               <div class="total">
                 <div class="total-title">Total</div>
-                <div class="total-price">LKR 0</div>
+                <div class="total-price" id="cart-total-amountId">LKR 0</div>
               </div>
               <!-- buy button -->
               <!-- <form action="CheckOut.html"> -->
-              <button type="submit" class="btn-buy"  >Pay Now</button>
+              <button  class="btn-buy" onclick="payNowBtn()"  >Pay Now</button>
               <!-- </form> -->
               <!-- close cart -->
               <i class='bx bx-x' style='color:#ffffff' id="close-cart"  ></i>
@@ -53,8 +53,7 @@
                         <h3 class="title-payment">Order Summery</h3>
                         <div class="total-payment">    
                             <div class="total-title">Total</div>
-                            <div class="total-amount">LKR 0</div>
-                        </div>
+                            <div class="total-amount"><span id="total-amountId"></span> .00</div>
                         <h3 class="title">Your Details</h3>
                         <div class="input-box">
                             <span>Full name :</span>

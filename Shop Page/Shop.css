@@ -90,15 +90,15 @@ padding: 4rem 0 3rem;
 }
 .cart{
   position: fixed;
-  /* float: right; */
   top: 0;
   right: -100%;
   width: 360px;
-  min-height: 100vh;
   padding: 20px;
   background:  #0d1635;
   box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: scroll;
+  height: 100vh;
 }
 .cart.active{
   right: 0;
