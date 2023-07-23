@@ -10,7 +10,9 @@
 body {
   color: #fff;
   background: #000000;
-  overflow: hidden;
+  overflow-y: scroll;
+  
+  background: url('/Images/background.jpg') no-repeat;
 }
   
 /* Navigation bar styles */
@@ -66,8 +68,7 @@ nav ul li a.active {
 /* End of the Navigation bar styles */
 
 .main{
-  min-height: 100vh;
-  background: url('/Images/background.jpg') no-repeat;
+  min-height: 5%;
   background-size: cover;
   background-position: center;
   pointer-events: auto;
@@ -83,6 +84,7 @@ h1{
   position: absolute;
   top: 25%;
   left: 34%;
+  bottom: 20%;
   transform: translate( 0%, 0%);
 }
 
@@ -131,7 +133,7 @@ footer {
   background: #0d1635;
   text-align: center;
   padding: 10px 0;
-  margin-top: auto;
+  margin-top: 95%;
 }
 
 .footer-container {
