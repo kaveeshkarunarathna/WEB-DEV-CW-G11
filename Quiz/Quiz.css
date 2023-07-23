@@ -390,7 +390,7 @@ nav ul li a.active {
 }
 
 .result-box .percentage-container {
-  width: 300px;
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,7 +400,7 @@ nav ul li a.active {
 .percentage-container {
   font-size: 18px;
   font-weight: 400;
-  margin-top: 20px;
+
 }
 
 .result-box .buttons {
@@ -440,7 +440,7 @@ nav ul li a.active {
 footer {
   background: #0d1635;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0;
   margin-top: 10px;
 
 }
