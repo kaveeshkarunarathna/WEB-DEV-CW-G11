@@ -175,3 +175,28 @@ textarea {
   text-align: center;
   margin-top: 40px;
 }
+
+footer {
+  background: #0d1635;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  font-size: 14px;
+}
+
+.footer-container p {
+  margin: 0;
+  color: #a9dcf0;
+}
+
+.footer-container a {
+  color: #a9dcf0;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}

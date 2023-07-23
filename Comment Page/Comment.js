@@ -13,28 +13,27 @@ function validateForm() {
     return false;
   }
 
-  if (!ratingExplanation.trim()) {
+  else if (!ratingExplanation.trim()) {
     document.getElementById("ratingExplanationError").innerHTML = "Please provide an explanation for your rating.";
     return false;
   }
 
-  if (favoriteFeature === "Select an option") {
+  else if (favoriteFeature === "") {
     document.getElementById("favoriteFeatureError").innerHTML = "Please select your favorite feature.";
     return false;
   }
 
-  if (!recommendation) {
+  else if (!recommendation) {
     document.getElementById("recommendationError").innerHTML = "Please select if you would recommend our website.";
     return false;
   }
 
-  if (!isValidEmail(email)) {
+  else if (!isValidEmail(email)) {
     document.getElementById("emailError").innerHTML = "Please provide a valid email address.";
     return false;
   }
-
-  showThankYouMessage();
   submitForm();
+  showThankYouMessage();
   return false;
 }
 
@@ -46,7 +45,6 @@ function clearErrors() {
 }
 
 function isValidEmail(email) {
-  // Simple email validation regex (not fully comprehensive)
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
@@ -64,8 +62,8 @@ function submitForm() {
     `Favorite Feature: ${favoriteFeature}%0D%0A` +
     `Recommendation: ${recommendation}%0D%0A`;
 
-  const mailtoLink = `mailto:kaveeshbc@gmail.com,kaveesh.20223173@iit.ac.lk?subject=${subject}&body=${emailBody}`;
+  const mailtoLink = `mailto:kaveesh.20223173@iit.ac.lk?subject=${subject}&body=${emailBody}`;
   
   // Open the mailto link in a new window
-  window.open(mailtoLink, "_blank");
+  window.open(mailtoLink);
 }

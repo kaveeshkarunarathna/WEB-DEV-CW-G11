@@ -10,12 +10,12 @@
 body {
   color: #fff;
   background: #000000;
+  background: url('/Images/background.jpg') no-repeat;
   overflow: hidden;
 }
 
 .main{
   min-height: 100vh;
-  background: url('/Images/background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   pointer-events: auto;
@@ -81,6 +81,7 @@ nav ul li a.active {
     justify-content: center;
     gap: 20px;
     margin-top: 20vh;
+    margin-bottom: 10%;
   }
   
   .title-card {
@@ -114,6 +115,7 @@ nav ul li a.active {
     margin-top: 150%;
     z-index: 1;
     transition: opacity 0.3s ease-in-out;
+    margin-bottom: 10%;
   }
   
   .title-card:hover p {
@@ -152,4 +154,29 @@ nav ul li a.active {
 
 .title-card:nth-child(4) {
   background-image: url('AboutUs Images/dakshina.jpg');
+}
+
+footer {
+  background: #0d1635;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  font-size: 14px;
+}
+
+.footer-container p {
+  margin: 0;
+  color: #a9dcf0;
+}
+
+.footer-container a {
+  color: #a9dcf0;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }
