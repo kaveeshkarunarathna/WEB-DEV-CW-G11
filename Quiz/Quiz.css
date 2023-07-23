@@ -10,7 +10,7 @@
 body {
   color: #fff;
   background: #000000;
-  overflow: hidden;
+  overflow: hidden
 }
   
 /* Navigation bar styles */
@@ -441,7 +441,8 @@ footer {
   background: #0d1635;
   text-align: center;
   padding: 10px 0;
-  margin-top: auto;
+  margin-top: 10px;
+
 }
 
 .footer-container {
