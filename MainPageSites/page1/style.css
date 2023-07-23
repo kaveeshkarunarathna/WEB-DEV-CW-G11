@@ -4,17 +4,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   color: #fff;
   background: #000000;
-  overflow: hidden;
+  background: url('/Images/background.jpg') no-repeat;
+  overflow: auto;
 }
-  
-/* Navigation bar styles */
 
+/* Navigation bar styles */
 nav {
   display: flex;
   background: #0d1635;
@@ -29,21 +29,20 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 30px; 
+  height: 30px;
 }
 
 nav ul {
   display: inline-block;
   padding: 0;
   margin: 0 auto;
-
 }
-  
+
 nav ul li {
   display: inline-block;
   margin: 10px;
 }
-  
+
 nav ul li a {
   display: block;
   padding: 10px;
@@ -51,25 +50,44 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-  
+
 nav ul li a:hover {
   background: #ff0077;
   border-radius: 5px;
-    
 }
-  
+
 nav ul li a.active {
   background: #ff0077;
   border-radius: 5px;
 }
-  
+
 /* End of the Navigation bar styles */
 
-.main{
+.main {
   min-height: 100vh;
-  background: url('/Images/background.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   pointer-events: auto;
-  transition: .3s ease;
+  transition: 0.3s ease;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
