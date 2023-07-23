@@ -6,6 +6,7 @@
     <title>SiteMap</title>
     <link rel="website Icon" type="png" href="/Images/CrickZoneWhite.png">
     <link rel="stylesheet" type="text/css" href="SiteMap.css">
+    <script src="https://kit.fontawesome.com/118f08a31f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <main class="main">
@@ -28,28 +29,84 @@
     <h1>sitemap</h1>
     <div class="pentagon-box">
       <svg height = "500" width = "500">
-        <polygon points="250,30 465,190 388,470 112,470 35,190" stroke = "pink" stroke-width ="4px" fill = "none" >
+        <polygon polygon points="250,30 465,160 465,340 250,470 35,340 35,160" stroke = "pink" stroke-width ="4px" fill = "none" >
       </svg>
        <div class="link_circle" id="circle_1">
-                <a href="/Main Page/mainPage.html">Home<i class="fa-solid fa-house"></i></a>
+                <a href="/Main Page/mainPage.html"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="link_circle" id="circle_2">
-                <a href="/Comment Page/Comment.html">Comments<i class="fa-solid fa-comment"></i></a>
+                <a href="/Comment Page/Comment.html"><i class="fa-solid fa-comment"></i></a>
             </div>
             <div class="link_circle" id="circle_3">
-                <a href="/Shop Page/Shop.html">Shop<i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/Shop Page/Shop.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="link_circle" id="circle_4">
-                <a href="/Quiz/Quiz.html">Quiz<i class="fa-solid fa-question"></i></a>
+                <a href="/Quiz/Quiz.html"><i class="fa-solid fa-question"></i></a>
             </div>
             <div class="link_circle" id="circle_5">
-                <a href="/About Us Page/AboutUs.html">About Us<i class="fa-solid fa-circle-info"></i></a>
+                <a href="/About Us Page/AboutUs.html"><i class="fa-solid fa-circle-info"></i></a>
             </div>
-            <!-- <div class="link_circle" id="circle_6">
+            <div class="link_circle" id="circle_6">
                 <a href="../Thumbnail/index.html"><i class="fa-regular fa-images"></i></a>
-            </div> -->
+            </div>
+            <div id="page_name">
+              <p>Welcome</p>
+            </div>
     </div>
   </main>
 </body>
+
+<script>
+
+  const linkCircles = document.querySelectorAll('.link_circle');
+  const pageName = document.querySelector('#page_name');
+  
+  linkCircles.forEach(linkCircle => {
+      linkCircle.addEventListener('mouseover', () => {
+          const circleNumber = linkCircle.id;
+
+          switch (circleNumber) {
+              case 'circle_1':
+                  pageName.innerHTML = 'Home';
+                  linkCircle.querySelector('i').style.color = '#ff0077';
+                  break;
+              case 'circle_2':
+                  pageName.innerHTML = 'Comment';
+                  linkCircle.querySelector('i').style.color = '#ff0077';
+                  break;
+              case 'circle_3':
+                  pageName.innerHTML = 'Shop';
+                  linkCircle.querySelector('i').style.color = '#ff0077';
+                  break;
+              case 'circle_4':
+                  pageName.innerHTML = 'Quiz';
+                  linkCircle.querySelector('i').style.color = '#ff0077';             
+                  break;
+              case 'circle_5':
+                  pageName.innerHTML = 'About Us';
+                  linkCircle.querySelector('i').style.color = '#ff0077';             
+                  break;
+              case 'circle_6':
+                  pageName.innerHTML = 'Gallery';
+                  linkCircle.querySelector('i').style.color = '#ff0077';                                 
+                  break;
+          
+              default:
+                  pageName.innerHTML = 'Welcome';
+                  linkCircle.querySelector('i').style.color = '#ff0077'; 
+                  break;
+          }
+      })
+
+      linkCircle.addEventListener('mouseleave', ()=> {
+          pageName.innerHTML = 'Welcome'; 
+          
+          linkCircles.forEach(linkCircle => {
+              linkCircle.querySelector('i').style.color = 'var(--primary-color)'; 
+          });   
+      })
+  });
+
+</script>
 
 </html>
