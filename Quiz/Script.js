@@ -147,10 +147,16 @@ function showResultBox() {
     quizBox.classList.remove('active');
     resultBox.classList.add('active');
 
-    const scoreText = document.querySelector('.score-text');
-    scoreText.textContent = `Your Score ${userScore} out of ${questions.length}`;
+    const Questions = document.querySelector('.questions');
+    Questions.textContent = `Questions : ${questions.length}`;
 
-    const circularProgress = document.querySelector('.circular-progress');
+    const wrongAnswers = document.querySelector('.wrong-answers')
+    let incorrectAnswers = (questions.length-userScore);
+    wrongAnswers.textContent = `Wrong Answers :${incorrectAnswers}`;
+
+    const scoreText = document.querySelector('.score-text');
+    scoreText.textContent = `Score : ${userScore}`;
+
     const progressValue = document.querySelector('.progress-value');
     let progressStartValue = -1;
     let progressEndValue = (userScore / questions.length) * 100; 
@@ -159,18 +165,18 @@ function showResultBox() {
     let progress = setInterval(() => {
         progressStartValue++;
         //console.log(progressStartValue);
-        progressValue.textContent = `${progressStartValue}%`;
-        circularProgress.style.background = `conic-gradient(#ff0077 ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg);`;
+        progressValue.textContent = `Grade : ${progressStartValue}%`;
+        
 
         if (progressStartValue == progressEndValue){
             clearInterval(progress);
         }
     }, speed);
-
+    
 }
 
 function startCountdown() {
-    countdown = 60;
+    countdown = 1;
     remainingTime.textContent = countdown;
     timer = setInterval(function() {
       countdown--;
