@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,9 +14,26 @@ body {
   background: url('/Images/background.jpg') no-repeat;
   overflow: auto;
 }
-  
-/* Navigation bar styles */
 
+/* Radio button styles */
+input[type="radio"] {
+  margin-right: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ff00c3;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #ff00c3;
+}
+
+/* Navigation bar styles */
 nav {
   display: flex;
   background: #0d1635;
@@ -37,7 +55,6 @@ nav ul {
   display: inline-block;
   padding: 0;
   margin: 0 auto;
-
 }
   
 nav ul li {
@@ -62,16 +79,37 @@ nav ul li a.active {
   background: #ff0077;
   border-radius: 5px;
 }
-  
+
 /* End of the Navigation bar styles */
 
-.main{
+.main {
   min-height: 100vh;
   /* background: url('/Images/background.jpg') no-repeat; */
   background-size: cover;
   background-position: center;
   pointer-events: auto;
   transition: .3s ease;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9a4f1f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01629e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26b0ff;
 }
 
 .container {
