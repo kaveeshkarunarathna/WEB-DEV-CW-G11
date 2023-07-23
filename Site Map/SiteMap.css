@@ -98,14 +98,16 @@ nav ul li a.active {
 h1{
   text-align: center;
   padding: 20px;
+  font-size: 3rem;
 }
 
 .pentagon-box {
   position: absolute;
   top: 25%;
-  left: 34%;
+  left: 35%;
   bottom: 20%;
   transform: translate( 0%, 0%);
+  
 }
 
 .link_circle{

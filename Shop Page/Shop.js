@@ -155,11 +155,51 @@ function updateTotal() {
     cartIcon.setAttribute("data-quantity", quantity); 
 }
 // show successful message
-function showMessage(){
-    alert("Payment Successful");
-    window.location.reload();
-}
+// function showMessage(){
+//     alert("Payment Successful");
+//     window.location.reload();
+// }
 
+// check form filled in checkout
+function showMessage() {
+    // Get form field values
+    const name = document.getElementById("name").value;
+    const phoneNo = document.getElementById("phoneNo").value;
+    const email = document.getElementById("email").value;
+    const address = document.getElementById("address").value;
+    const district = document.getElementById("district").value;
+    const province = document.querySelector('select[name="Country"]').value;
+    const zipCode = document.getElementById("zipCode").value;
+    const paymentName = document.getElementById("payment-name").value;
+    const creditCardNumber = document.querySelector('input[type="number"]').value;
+    const expMonth = document.querySelector('input[id="date"]').value;
+    const expYear = document.querySelector('input[id="date"]').value;
+    const cvv = document.querySelector('input[type="text"][size="3"]').value;
+    const contactMobile = document.getElementById("contact-mobile").value;
+    const contactEmail = document.getElementById("contact-email").value;
+
+    // Check if any of the required fields are empty
+    if (
+      name === "" ||
+      phoneNo === "" ||
+      email === "" ||
+      address === "" ||
+      district === "" ||
+      province === "" ||
+      zipCode === "" ||
+      paymentName === "" ||
+      creditCardNumber === "" ||
+      expMonth === "" ||
+      expYear === "" ||
+      cvv === "" ||
+      contactMobile === "" ||
+      contactEmail === ""
+    ) {
+      alert("Please fill in all the required fields.");
+    } else {
+      alert("Payment Successful ");
+    }
+  }
 
 
 
