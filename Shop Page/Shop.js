@@ -17,6 +17,7 @@ payNow.onclick = () => {
 };
 exitNow.onclick = () => {
     checkoutForm.classList.remove('active') ;
+    window.location.reload ();
 };
 
 // cart open close
@@ -30,6 +31,7 @@ cartIcon.onclick = () => {
 // close cart
 closeCart.onclick = () => {
     cart.classList.remove('active');
+    window.location.reload ();
 };
 
 // making add to cart
