@@ -266,10 +266,10 @@ padding: 4rem 0 3rem;
 }
 
 
-@media (min-width: 768px) {
-  .shop-content {
-    grid-template-columns: repeat(4, 1fr);
-  }
+
+.shop-content {
+  grid-template-columns: repeat(4, 1fr);
+  
 }
 .shop-container{
   padding: 0;
