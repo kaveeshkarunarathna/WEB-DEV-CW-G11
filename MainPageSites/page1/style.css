@@ -11,7 +11,7 @@ body {
   color: #fff;
   background: #000000;
   background: url('/Images/background.jpg') no-repeat;
-  overflow-x: initial;
+  
 }
 
 /* Navigation bar styles */
@@ -69,11 +69,12 @@ nav ul li a.active {
   background-position: center;
   pointer-events: auto;
   transition: 0.3s ease;
+  overflow-x: hidden;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 img {
   max-width: 100%;
@@ -114,9 +115,15 @@ h1 {
   font-size: 46px;
   color: #ffffff;
   margin: 50px;
+  text-align: center;
 }
 
-p {
+.container-fluid {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container-fluid p {
   font-weight: 300;
   line-height: 24px;
   width: 100%;
@@ -135,3 +142,28 @@ p {
   float: left;
 }
 
+footer {
+  background: #0d1635;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  margin-bottom: 0%;
+}
+
+.footer-container {
+  font-size: 14px;
+}
+
+.footer-container p {
+  margin: 0;
+  color: #a9dcf0;
+}
+
+.footer-container a {
+  color: #a9dcf0;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
