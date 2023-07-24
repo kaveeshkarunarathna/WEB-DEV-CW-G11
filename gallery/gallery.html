@@ -25,5 +25,56 @@
         </ul>
       </nav>
     </header>
-    </main>
-    </html>
+    <div class="img_gallery">
+      <div class="img_gallery_header" id="img_gallery_header">
+          <h1 id="content">Gallery</h1>
+          <p class="font-changer">
+            
+            <button onclick="changeFontSize(28)">28px</button>
+            <button onclick="changeFontSize(36)">36px</button>
+            <button onclick="changeFontSize(48)">48px</button>
+          </p>
+      </div>
+      <div class="image_container">
+         <img src="icc.png.jpg" id="Image1" alt="thumb1"> 
+         <img src="asiacup.png.jpg" id="Image2" alt="thumb2">
+         <img src="hero.png.png" id="Image5" alt="thumb3">
+         <img src="The-Ashes-urn-c9b29b5.jpg" id="Image4" alt="thumb4">
+         <img src="lords.png.png" id="Image3" alt="thumb5">
+         <img src="ipl.png.jpg" id="Image6" alt="thumb6">
+      </div>
+    </div>
+
+    <div class="container">
+      <span id="1" onclick="colour(this)" class="colour clr3" ></span>
+      <span id="2" onclick="colour(this)" class="colour clr2"></span>
+      <span onclick="colour(this)" class="colour clr4" ></span>
+    </div>
+  </main>
+
+  <script>
+
+
+    function colour(z){
+        var a  = getComputedStyle(z);
+        var b = a.backgroundColor;
+
+        if(b === 'rgb(255, 255, 255)'){
+            document.querySelector('#img_gallery_header').style.color = 'white';
+        }else{
+            document.querySelector('#img_gallery_header').style.color = 'black';
+        }
+
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = b;
+    }
+
+
+
+  </script>
+  <script>
+      function changeFontSize(size) {
+        document.getElementById("content").style.fontSize = size + "px";
+      }
+  </script>
+
+</html>
