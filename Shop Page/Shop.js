@@ -46,20 +46,20 @@ if (document.readyState == 'loading'){
 function ready(){
     //remove item from cart
     var removeCartButton = document.getElementsByClassName('cart-remove');
-    for (var i = 0; i < removeCartButton.length; i++){
+    for (var i = 0; i <removeCartButton.length; i++){
         var button = removeCartButton[i];
         button.addEventListener("click",removeCartItem);
         
     }
     //quantity change
     var quantityInput = document.getElementsByClassName("cart-quantity");
-    for (var i = 0; i < quantityInput.length; i++){
+    for (var i = 0; i <quantityInput.length; i++){
         var input = quantityInput[i];
         input.addEventListener("change",quantityChanged);
     }
     // Add to Cart
     var addCart = document.getElementsByClassName("add-cart");
-    for (var i = 0; i < addCart.length; i++){
+    for (var i = 0; i <addCart.length; i++){
         var button = addCart[i];
         button.addEventListener("click",addCartClicked);
         }
@@ -67,7 +67,7 @@ function ready(){
 // quantity change - function (in cart increase quantity and reduce)
 function quantityChanged(event){
     var input =  event.target;
-    if (isNaN(input.value) || input.value <= 0){
+    if (isNaN(input.value) || input.value <=0){
         input.value = 1;
     }
     updateTotal();
@@ -96,7 +96,7 @@ function addProductToCart(title,price,productImg){
     var cartItems = document.getElementsByClassName("cart-content")[0];
     var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
     for ( var i = 0; i <cartItemsNames.length; i++){
-        if (cartItemsNames[i].innerText == title){
+        if (cartItemsNames[i].innerText = title){
             alert("You have Already added this item to cart");
             return;
         }
@@ -125,7 +125,7 @@ function updateTotal() {
     var cartContent = document.getElementsByClassName('cart-content')[0];
     var cartBoxes = cartContent.getElementsByClassName('cart-box');
     var total = 0;
-    for (var i = 0; i < cartBoxes.length; i++) {
+    for (var i = 0; i <cartBoxes.length; i++) {
       var cartBox = cartBoxes[i];
       var priceElement = cartBox.getElementsByClassName('cart-price')[0];
       var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
@@ -200,17 +200,3 @@ function showMessage() {
       alert("Payment Successful ");
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
