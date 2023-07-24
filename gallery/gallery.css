@@ -118,13 +118,13 @@ img:hover{
   opacity: 0.5;
 }
 
-.img_gallery{
+.image_gallery{
   width: 100vw;
   height: 100vh;
   display: grid;
 }
 
-.img_gallery_header{
+.image_gallery_header{
   margin-top: 100px;
   width: 100vw;
   height: fit-content;
@@ -164,13 +164,13 @@ margin: 0 1px;
 cursor: pointer;
 border:2px solid #fff;
 }
-.clr1 {
+.color1 {
   background-color: #1b2527;}
-.clr2 {
+.color2 {
   background-color: wheat;}
-.clr3 {
+.color3 {
   background-color: rgb(160, 227, 247);}
-.clr4 {
+.color4 {
   background-color:#e2f67c;}
   
   #content {
