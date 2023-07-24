@@ -118,13 +118,13 @@ img:hover{
   opacity: 0.5;
 }
 
-.img_gallery{
+.image_gallery{
   width: 100vw;
   height: 100vh;
   display: grid;
 }
 
-.img_gallery_header{
+.image_gallery_header{
   margin-top: 100px;
   width: 100vw;
   height: fit-content;
@@ -164,13 +164,13 @@ margin: 0 1px;
 cursor: pointer;
 border:2px solid #fff;
 }
-.clr1 {
+.color1 {
   background-color: #1b2527;}
-.clr2 {
+.color2 {
   background-color: wheat;}
-.clr3 {
+.color3 {
   background-color: rgb(160, 227, 247);}
-.clr4 {
+.color4 {
   background-color:#e2f67c;}
   
   #content {
@@ -182,4 +182,48 @@ border:2px solid #fff;
   position: absolute;
   right: 3px;
   top:130px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9a4f1f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01629e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26b0ff;
+}
+
+footer {
+  background: #0d1635;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 90%;
+}
+
+.footer-container {
+  font-size: 14px;
+}
+
+.footer-container p {
+  margin: 0;
+  color: #a9dcf0;
+}
+
+.footer-container a {
+  color: #a9dcf0;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }

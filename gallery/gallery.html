@@ -25,47 +25,53 @@
         </ul>
       </nav>
     </header>
-    <div class="img_gallery">
-      <div class="img_gallery_header" id="img_gallery_header">
+    <div class="image_gallery">
+      <div class="image_gallery_header" id="image_gallery_header">
           <h1 id="content">Gallery</h1>
           <p class="font-changer">
             
-            <button onclick="changeFontSize(28)">28px</button>
-            <button onclick="changeFontSize(36)">36px</button>
-            <button onclick="changeFontSize(48)">48px</button>
+            <button onclick="changeFontSize(20)">20px</button>
+            <button onclick="changeFontSize(30)">30px</button>
+            <button onclick="changeFontSize(50)">50px</button>
           </p>
       </div>
       <div class="image_container">
-         <img src="icc.png.jpg" id="Image1" alt="thumb1"> 
-         <img src="asiacup.png.jpg" id="Image2" alt="thumb2">
-         <img src="hero.png.png" id="Image5" alt="thumb3">
-         <img src="The-Ashes-urn-c9b29b5.jpg" id="Image4" alt="thumb4">
-         <img src="lords.png.png" id="Image3" alt="thumb5">
-         <img src="ipl.png.jpg" id="Image6" alt="thumb6">
+         <img src="icc.png.jpg" id="Image1" alt="picture1"> 
+         <img src="asiacup.png.jpg" id="Image2" alt="picture2">
+         <img src="hero.png.png" id="Image5" alt="picture3">
+         <img src="The-Ashes-urn-c9b29b5.jpg" id="Image4" alt="picture4">
+         <img src="lords.png.png" id="Image3" alt="picture5">
+         <img src="ipl.png.jpg" id="Image6" alt="picture6">
       </div>
     </div>
 
     <div class="container">
-      <span id="1" onclick="colour(this)" class="colour clr3" ></span>
-      <span id="2" onclick="colour(this)" class="colour clr2"></span>
-      <span onclick="colour(this)" class="colour clr4" ></span>
+      <span id="1" onclick="colour(this)" class="colour color3" ></span>
+      <span id="2" onclick="colour(this)" class="colour color2"></span>
+      <span onclick="colour(this)" class="colour color4" ></span>
     </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>Page Editor: <a href="/Page Editor/Dakshina.html">Dakshina Prabhath</a></p>
+      </div>
+    </footer>
   </main>
 
   <script>
 
 
     function colour(z){
-        var a  = getComputedStyle(z);
-        var b = a.backgroundColor;
+        var x  = getComputedStyle(z);
+        var y = x.backgroundColor;
 
-        if(b === 'rgb(255, 255, 255)'){
-            document.querySelector('#img_gallery_header').style.color = 'white';
+        if(y === 'white'){
+            document.querySelector('#image_gallery_header').style.color = 'white';
         }else{
-            document.querySelector('#img_gallery_header').style.color = 'black';
+            document.querySelector('#image_gallery_header').style.color = 'black';
         }
 
-        document.getElementsByTagName("BODY")[0].style.backgroundColor = b;
+        document.getElementsByTagName("BODY")[0].style.backgroundColor = y;
     }
 
 
