@@ -154,12 +154,6 @@ function updateTotal() {
     var cartIcon = document.querySelector("#cart-icon");
     cartIcon.setAttribute("data-quantity", quantity); 
 }
-// show successful message
-// function showMessage(){
-//     alert("Payment Successful");
-//     window.location.reload();
-// }
-
 // check form filled in checkout
 function showMessage() {
     // Get form field values
