@@ -71,11 +71,6 @@ nav ul li a.active {
   transition: 0.3s ease;
   overflow-x: hidden;
 }
-
-/* html {
-  scroll-behavior: smooth;
-} */
-
 img {
   max-width: 100%;
   height: auto;
